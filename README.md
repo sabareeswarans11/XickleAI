@@ -16,6 +16,8 @@ Since there is no publicly available dataset, especially for SCD, I need to scra
   * https://www.hhs.gov/ash/osm/innovationx/human-centered-design/sickle-cell-disease/index.html
   * Sickle Cell Disease and Hematopoietic Stem Cell Transplantation DOI 10.1007/978-3-319-62328-3
   * Newborn Screening for Sickle Cell Disease and other Haemoglobinopathies ISBN 978-3-03921-615-4 (PDF)
+  * Right now working on data extraction (Video down below)
+  * https://github.com/sabareeswarans11/XickleAI/assets/94094997/b725804f-0aa8-49a2-a835-7429ef57a979
 
 
 # Setting up and running LLM --xickle_datagen locally 
