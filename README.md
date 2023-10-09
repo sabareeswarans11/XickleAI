@@ -77,7 +77,7 @@ Since there is no publicly available dataset, especially for SCD, I need to scra
 # Goal and Vision XickleAI
 An AI assistant that empowers individuals affected by sickle cell disease with comprehensive support, from symptom tracking to research collaboration, enhancing their quality of life.
 * Future goals
-  * **Transition to vector embedding** and a vector database for improved efficiency, and fine-tuning with the latest large language model for ongoing enhancements
+  * **Transition to vector embedding** or a vector database for improved efficiency, and fine-tuning with the latest large language model for ongoing enhancements
   * **Symptom Tracking**: Allow users to input and track their symptoms over time. This data can be useful for both individuals and their healthcare providers.
   * **Medication Reminders**: Set up medication reminders to help users stay on top of their treatment plans and offer information about common SCD medications and potential side effects.
   * **Research Updates**: Provide access to the latest research papers, clinical trials, and studies related to sickle cell disease.
