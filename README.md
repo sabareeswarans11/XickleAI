@@ -29,9 +29,49 @@ Since there is no publicly available dataset, especially for SCD, I need to scra
 # FineTuned Model 
 * I am currently working on the fine-tuning of Falcon-13b-instruct for XickleAI. This is just a starting point.
 * I have fine-tuned a sample test model with Falcon-7 billion parameters. Although I used a relatively small dataset, its performance is enhanced due to its domain knowledge.
-* GPT 3.5 vs XickleAI [scd_beta](https://huggingface.co/Sab11/scd_beta)
+* GPT 3.5 vs XickleAI [scd_beta](https://huggingface.co/Sab11/scd_beta) education purpose only right now.
 * <img width="950" alt="Screenshot 2023-10-09 at 1 00 57 AM" src="https://github.com/sabareeswarans11/XickleAI/assets/94094997/29920a21-1f5b-47bb-8ddc-ab7fe71804cc"> 
 * <img width="950" alt="Screenshot 2023-10-09 at 12 15 36 AM" src="https://github.com/sabareeswarans11/XickleAI/assets/94094997/11f383fa-31b7-4e36-8737-9250631d7ac0">
+* ```python PeftModelForCausalLM(
+  (base_model): LoraModel(
+    (model): FalconForCausalLM(
+      (transformer): FalconModel(
+        (word_embeddings): Embedding(65024, 4544)
+        (h): ModuleList(
+          (0-31): 32 x FalconDecoderLayer(
+            (self_attention): FalconAttention(
+              (maybe_rotary): FalconRotaryEmbedding()
+              (query_key_value): Linear4bit(
+                in_features=4544, out_features=4672, bias=False
+                (lora_dropout): ModuleDict(
+                  (default): Dropout(p=0.05, inplace=False)
+                )
+                (lora_A): ModuleDict(
+                  (default): Linear(in_features=4544, out_features=16, bias=False)
+                )
+                (lora_B): ModuleDict(
+                  (default): Linear(in_features=16, out_features=4672, bias=False)
+                )
+                (lora_embedding_A): ParameterDict()
+                (lora_embedding_B): ParameterDict()
+              )
+              (dense): Linear4bit(in_features=4544, out_features=4544, bias=False)
+              (attention_dropout): Dropout(p=0.0, inplace=False)
+            )
+            (mlp): FalconMLP(
+              (dense_h_to_4h): Linear4bit(in_features=4544, out_features=18176, bias=False)
+              (act): GELU(approximate='none')
+              (dense_4h_to_h): Linear4bit(in_features=18176, out_features=4544, bias=False)
+            )
+            (input_layernorm): LayerNorm((4544,), eps=1e-05, elementwise_affine=True)
+          )
+        )
+        (ln_f): LayerNorm((4544,), eps=1e-05, elementwise_affine=True)
+      )
+      (lm_head): Linear(in_features=4544, out_features=65024, bias=False)
+    )
+  )
+  )
 * Note `This model is currently in the developing stage`
 
 # Goal and Vision XickleAI
